@@ -1,0 +1,28 @@
+body{
+    background-color: lightgray;
+}
+h3{
+    text-align: center;
+    color: black;
+}
+button{
+    width: 100%;
+    display: block;
+    display: inline;
+    border-radius:.5em;
+
+}
+
+input{
+    color: #FFFFFF;
+    background-color: #090A0F;
+    border-radius:.5em;
+}
+input::placeholder{
+    color: #FFFFFF;
+}
+.inputContainer{
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+

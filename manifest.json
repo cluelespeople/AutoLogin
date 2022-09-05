@@ -1,0 +1,33 @@
+{
+    "name": "Auto Login",
+    "description": "This extention saves time by automatically logging in your collage network",
+    "manifest_version":2,
+    "version": "0.0.1",
+    "permissions": ["storage"],
+    "browser_action": {
+        "default_popup": "popup.html"
+    },
+    "icons": { 
+          "128": "./icons/icon.png" },
+    "content_security_policy": "script-src 'self' 'sha256-WOdSzz11/3cpqOdrm89LBL2UPwEU9EhbDtMy2OciEhs='",
+
+    "content_scripts": [
+        {
+        "run_at": "document_end",
+          "matches": ["http://172.16.1.1/*"],
+          "js": ["./form.js"],
+          "css": ["./form.css"]
+        },
+        {
+        "run_at": "document_end",
+        "matches": ["http://172.16.1.1/*"],
+        "js": ["./beautifullBg.js"],
+        "css" : ["beautifullBg.css"]
+        },
+        {
+            "run_at": "document_end",
+            "matches": ["http://172.16.1.1/*"],
+            "js": ["./loginbot.js"]
+        }
+    ]
+}
