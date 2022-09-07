@@ -1,12 +1,12 @@
 const grabBg = document.querySelector('body')
 const canvas = document.createElement('canvas')
-let form=document.body.innerHTML;
+let form = document.body.innerHTML;
 
 grabBg.appendChild(canvas)
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
 const ctx = canvas.getContext('2d');
-window.addEventListener('resize', function() {
+window.addEventListener('resize', function () {
   canvas.width = window.innerWidth;
   canvas.height = window.innerHeight;
   init();
@@ -20,8 +20,8 @@ function Star(x, y, width, speed) {
   this.width = width;
   this.speed = speed;
   this.color = "#fff";
-  
-  this.draw = function() {
+
+  this.draw = function () {
     ctx.fillStyle = this.color;
     ctx.fillRect(this.x, this.y, width, width);
   }
@@ -39,17 +39,17 @@ function Star(x, y, width, speed) {
 
 // Star dimensions and speed
 const stars = {
-  nearStar : {
-    width : 3,
-    speed : 0.2
+  nearStar: {
+    width: 3,
+    speed: 0.2
   },
-  midStar : {
-    width : 2,
-    speed : 0.1
+  midStar: {
+    width: 2,
+    speed: 0.1
   },
-  farStar : {
-    width : 1,
-    speed : 0.025
+  farStar: {
+    width: 1,
+    speed: 0.025
   }
 };
 
@@ -60,21 +60,21 @@ function init() {
 
   starArray = [];
   // nearest stars
-  for (let i=0; i < 50; ++i) {
+  for (let i = 0; i < 50; ++i) {
     const x = Math.random() * (innerWidth - stars.nearStar.width);
     const y = Math.random() * (innerHeight - stars.nearStar.width);
     starArray.push(new Star(x, y, stars.nearStar.width, stars.nearStar.speed));
   }
 
   // mid-distance stars
-  for (let i=0; i < 100; ++i) {
+  for (let i = 0; i < 100; ++i) {
     const x = Math.random() * (innerWidth - stars.midStar.width);
     const y = Math.random() * (innerHeight - stars.midStar.width);
     starArray.push(new Star(x, y, stars.midStar.width, stars.midStar.speed));
   }
 
   // farthest stars
-  for (let i=0; i < 350; ++i) {
+  for (let i = 0; i < 350; ++i) {
     const x = Math.random() * (innerWidth - stars.farStar.width);
     const y = Math.random() * (innerHeight - stars.farStar.width);
     starArray.push(new Star(x, y, stars.farStar.width, stars.farStar.speed));

@@ -9,8 +9,6 @@
     },
     "icons": { 
           "128": "./icons/icon.png" },
-    "content_security_policy": "script-src 'self' 'sha256-WOdSzz11/3cpqOdrm89LBL2UPwEU9EhbDtMy2OciEhs='",
-
     "content_scripts": [
         {
         "run_at": "document_end",
@@ -28,6 +26,12 @@
             "run_at": "document_end",
             "matches": ["http://172.16.1.1/*"],
             "js": ["./loginbot.js"]
-        }
+        },
+        {
+            "run_at": "document_end",
+            "matches": ["http://172.16.1.1/*"],
+            "js": ["./sidepannel.js"],
+            "css": ["./sidepannel.css"]
+        }       
     ]
 }

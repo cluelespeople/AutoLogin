@@ -33,6 +33,11 @@ document.getElementById('buttonCase').appendChild(youtube)
 document.getElementById('buttonCase').appendChild(whatsapp)
 document.getElementById('buttonCase').appendChild(notes)
 
+document.getElementsByClassName('message')[0].style="color:#ffffff;"
+document.getElementsByClassName('login-icon')[0].remove();
+document.getElementById("loggedin-message").style="height:7em;"
+document.getElementById('statusmessage').style='color:#ffffff'
+
 
 whatsapp.addEventListener('click',()=>{
   window.open('https://web.whatsapp.com/', '_blank');
@@ -43,3 +48,6 @@ youtube.addEventListener('click',()=>{
 notes.addEventListener('click',()=>{
   window.open('https://keep.google.com/', '_blank');
 })
+
+document.getElementById('credentials').children[0].style='background-color: rgb(35, 50, 68 , .8);';
+document.getElementById('credentials').children[1].style='background-color: rgb(35, 50, 68 , .8);';
