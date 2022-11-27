@@ -10,6 +10,6 @@
 5. Click on Load Unpacked 
 6. Navigate to AutoLogin folder and click on select.
 7. Now open your newly installed extention from extentions section (![Screenshot from 2022-09-03 23-03-31](https://user-images.githubusercontent.com/112774137/188499059-b7a0d64d-ab0d-4fb2-8211-e9823b2933ee.png)shaped button on top right corner)
-8. Click on AutoLogin extention.
-9. Enter your username and password then press submit.
-10. Enjoy your new Network Login page :)
+8.Connect to collage Network.
+9. Open hamberger menue from top left corner .Enter your username ,password and click on Add.
+10. Reload page and enjoy .
