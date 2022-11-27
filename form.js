@@ -25,7 +25,7 @@ notes.className='new-button'
 
 whatsapp.innerText='Whatsapp'
 youtube.innerText='Youtube'
-notes.innerText='Notes'
+notes.innerText='SpeedTest'
 
 
 document.getElementById('loggedin-message').appendChild(buttonCase)
@@ -46,7 +46,7 @@ youtube.addEventListener('click',()=>{
   window.open('https://www.youtube.com/', '_blank');
 })
 notes.addEventListener('click',()=>{
-  window.open('https://keep.google.com/', '_blank');
+  window.open('https://www.speedtest.net', '_blank');
 })
 
 document.getElementById('credentials').children[0].style='background-color: rgb(35, 50, 68 , .8);';
