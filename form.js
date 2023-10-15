@@ -1,7 +1,8 @@
 const customUsername="YourName"
 
 console.log("Extention started");
-document.getElementById("headerdiv").remove();
+document.querySelector("#headerdiv > h2 > marquee > h2").remove()
+
 document.getElementById("footerdiv").remove();
 document.getElementById("signin-caption").style.color = "#ffffff";
 document.getElementById("myaccountcaption").style.color = "#ffffff";
@@ -46,7 +47,7 @@ youtube.addEventListener('click',()=>{
   window.open('https://www.youtube.com/', '_blank');
 })
 notes.addEventListener('click',()=>{
-  window.open('https://www.speedtest.net', '_blank');
+  window.open('https://speedtest.net', '_blank');
 })
 
 document.getElementById('credentials').children[0].style='background-color: rgb(35, 50, 68 , .8);';
