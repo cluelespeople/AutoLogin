@@ -25,7 +25,7 @@
         {
             "run_at": "document_end",
             "matches": ["http://172.16.1.1/*"],
-            "js": ["./loginbot.js"]
+            "js": ["./newLoginbot.js"]
         },
         {
             "run_at": "document_end",
